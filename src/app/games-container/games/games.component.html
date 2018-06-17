@@ -1,0 +1,5 @@
+<div class="Game" *ngFor="let game of games">
+  <img class="img-fluid" src="https://placeimg.com/360/190/any" alt="test">
+  <p>{{game.releaseDate.month}} {{game.releaseDate.day}} {{game.releaseDate.year}}</p>
+  <span *ngFor="let platform of game.platforms">{{platform}}</span>
+</div>

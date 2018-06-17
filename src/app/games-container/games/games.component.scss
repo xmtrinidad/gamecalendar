@@ -1,0 +1,21 @@
+:host {
+  display: grid;
+  justify-content: center;
+  grid-column-gap: 15px;
+}
+
+.Game {
+
+}
+
+@media (min-width: 768px) {
+  :host {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  :host {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

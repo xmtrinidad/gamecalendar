@@ -1,0 +1,4 @@
+<section *ngFor="let gameSection of gameSections">
+  <app-year [year]="gameSection.year"></app-year>
+  <app-games [games]="gameSection.games"></app-games>
+</section>
