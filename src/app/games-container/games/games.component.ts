@@ -14,4 +14,14 @@ export class GamesComponent implements OnInit {
   ngOnInit() {
   }
 
+  getPlatformColor(platform) {
+    if (platform === 'xboxone') {
+      return '#107c10';
+    } else if (platform === 'ps4') {
+      return '#004098';
+    } else if (platform === 'pc') {
+      return '#6f6f6f';
+    }
+  }
+
 }

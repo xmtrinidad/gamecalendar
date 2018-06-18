@@ -1,5 +1,10 @@
 <div class="Game" *ngFor="let game of games">
-  <img class="img-fluid" src="https://placeimg.com/360/190/any" alt="test">
-  <p>{{game.releaseDate.month}} {{game.releaseDate.day}} {{game.releaseDate.year}}</p>
-  <span *ngFor="let platform of game.platforms">{{platform}}</span>
+  <img class="img-fluid Game__img" src="https://placeimg.com/360/190/any" alt="test">
+  <div class="Game__info-row">
+    <p class="Game__release-date">{{game.releaseDate.month}} {{game.releaseDate.day}} {{game.releaseDate.year}}</p>
+    <span
+      class="Game__platform-indicator"
+      *ngFor="let platform of game.platforms"
+      [ngStyle]="{'background-color': getPlatformColor(platform)}"></span>
+  </div>
 </div>

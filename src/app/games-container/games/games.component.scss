@@ -1,11 +1,30 @@
+/** Target entire component **/
 :host {
   display: grid;
   justify-content: center;
-  grid-column-gap: 15px;
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
 }
 
-.Game {
+/** This is the row containing release date and platform indicators **/
+.Game__info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.Game__release-date {
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  flex: 1;
+  margin: 0;
+}
+
+.Game__platform-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-left: 5px;
 }
 
 @media (min-width: 768px) {
